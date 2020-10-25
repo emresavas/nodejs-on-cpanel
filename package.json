@@ -1,0 +1,19 @@
+{
+    "name": "nodejsapp",
+    "version": "0.0.1",
+    "description": "This is an example Node.js app working on cPanel",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/emresavas/nodejs-on-cpanel.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/emresavas/nodejs-on-cpanel/issues"
+    },
+    "homepage": "https://github.com/emresavas/nodejs-on-cpanel#readme"
+  }
