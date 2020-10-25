@@ -16,7 +16,7 @@ This is a Node.js app example project ready to deploy on cPanel.
   * You will see "Ensure Dependencies" button next to app name. Click this button and start initialization of Node.js app on cPanel.
 
 # Requirements & Notes
-* Do not change app.js filename. Passenger web server will automatically search for app.js file to start Node.js application. If you name your file let's say myapp.js, Passenger webserver won't able to start your app.
+* Since Apache on cPanel working as a proxy for Passenger webserver, it will create some default proxy entries with app.js file. Do not change app.js filename. Passenger web server will automatically search for app.js file to start Node.js application. If you name your file let's say myapp.js, Passenger webserver won't able to start your app.
 
 # Auto Deploy to Cpanel
 * Change `.cpanel.yml.example` filename to `.cpanel.yml`
