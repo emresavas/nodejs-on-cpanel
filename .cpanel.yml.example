@@ -4,6 +4,6 @@ deployment:
     - export DEPLOYPATH=/home/user/nodejsapp/
     - /bin/mkdir $DEPLOYPATH
     - /bin/cp app.js $DEPLOYPATH
-    - /bin/cp packages.json $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
     - /bin/mkdir $DEPLOYPATH/tmp
     - /bin/touch $DEPLOYPATH/tmp/restart.txt
