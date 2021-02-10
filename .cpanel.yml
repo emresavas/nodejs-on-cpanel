@@ -1,6 +1,6 @@
 ---
 deployment:
-  tasks: |
+  tasks:
     - export DEPLOYPATH=/home/$USER/nodejsapp/
     - /bin/mkdir $DEPLOYPATH
     - /bin/cp app.js $DEPLOYPATH
