@@ -5,6 +5,7 @@ deployment:
     - /bin/mkdir $DEPLOYPATH
     - /bin/cp app.js $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp script.sh $DEPLOYPATH
     - /bin/mkdir $DEPLOYPATH/tmp
     - /bin/touch $DEPLOYPATH/tmp/restart.txt
     - /bin/chmod +x $DEPLOYPATH/script.sh
