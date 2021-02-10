@@ -7,7 +7,7 @@ deployment:
     - /bin/cp package.json $DEPLOYPATH
     - /bin/mkdir $DEPLOYPATH/tmp
     - /bin/touch $DEPLOYPATH/tmp/restart.txt
-    - export DOMAIN="$(uapi DomainInfo domains_data | grep -w "domain")"
-    - export DOMAIN="${DOMAIN#*\: }"
+    - /bin/chmod +x $DEPLOYPATH/script.sh
+    - /bin/sh $DEPLOYPATH/script.sh
     - uapi PassengerApps register_application name="nodejsapp" path="/nodejsapp" domain="$DOMAIN" deployment_mode="production" base_uri="/nodejsapp" enabled="1"
     - uapi PassengerApps ensure_deps type="npm" app_path="nodejsapp"
