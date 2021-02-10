@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/$USER/nodejsapp/
-    - DOMAIN=$(uapi DomainInfo domains_data format=main_domain return_https_redirect_status=0 | grep -w "domain:")
+    - export DOMAIN=$(uapi DomainInfo domains_data | grep -w "domain:")
     - export DOMAIN="${DOMAIN#*: }"
     - /bin/mkdir $DEPLOYPATH
     - /bin/cp app.js $DEPLOYPATH
